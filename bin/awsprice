@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var pkg = require('../package.json');
+var awsprice = require('../');
+
+program
+  .version(pkg.version)
+  .usage('[options] <asin> ...')
+  .parse(process.argv);
+
+ var asin = program.args[0];
+
+ awsprice(asin, function (err, prices) {
+ 	console.log(prices);
+ });

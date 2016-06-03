@@ -1,0 +1,25 @@
+{
+  "name": "amazon-price",
+  "version": "1.0.0",
+  "description": "Amazon price checker.",
+  "main": "index.js",
+  "bin": {
+    "awsprice": "./bin/awsprice"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amazon",
+    "aws",
+    "price"
+  ],
+  "author": "Jose Maria Nunez-Izu <jmnunezizu@gmail.com> (https://github.com/jmnunezizu)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "cheerio": "^0.20.0",
+    "commander": "^2.9.0",
+    "request": "^2.72.0"
+  }
+}
